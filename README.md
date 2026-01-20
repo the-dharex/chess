@@ -64,4 +64,4 @@ cargo run --release
 
 ## Créditos
 
-Desarrollado como proyecto de aprendizaje de Rust y desarrollo de videojuegos.
+Desarrollado por thedharex en exclusivo para el mundo.
