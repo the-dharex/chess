@@ -45,7 +45,7 @@ cargo run --release
     - Espera a que se conecte.
 
 2. **Join (Unirse)**:
-    - Selecciona **"3. Join Game"**.
+    - Selecciona **"3. Unirse al Juego"**.
     - Escribe el código (IP:Puerto) que te dio el anfitrión.
     - Presiona **Enter**.
 

@@ -179,7 +179,7 @@ impl event::EventHandler<ggez::GameError> for GameState {
                 for msg in messages {
                     match msg {
                         NetworkMessage::Handshake { color } => {
-                            println!("Saludo recibido: Eres {:?}", color);
+                            println!("Mensaje recibido: Eres {:?}", color);
                             self.reset_game(color, GameType::Multiplayer);
                         },
                         NetworkMessage::Move { from, to } => {
@@ -235,13 +235,13 @@ impl event::EventHandler<ggez::GameError> for GameState {
                 let title = Text::new("AJEDREZ");
                 canvas.draw(&title, DrawParam::default().dest([350.0, 100.0]).scale([2.0, 2.0]));
                 
-                let play_ai = Text::new("1. Jugar vs IA");
+                let play_ai = Text::new("1. Jugador vs IA");
                 canvas.draw(&play_ai, DrawParam::default().dest([350.0, 300.0]));
 
                 let host = Text::new("2. Hospedar Juego");
                 canvas.draw(&host, DrawParam::default().dest([350.0, 350.0]));
 
-                let join = Text::new("3. Unirse a Juego");
+                let join = Text::new("3. Unirse al Juego");
                 canvas.draw(&join, DrawParam::default().dest([350.0, 400.0]));
             },
             AppMode::HostWait => {
